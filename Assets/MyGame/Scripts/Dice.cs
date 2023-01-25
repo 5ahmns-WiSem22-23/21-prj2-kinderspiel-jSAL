@@ -1,59 +1,111 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Dice : MonoBehaviour {
+public class Dice : MonoBehaviour
+{
 
-    // Array of dice sides sprites to load from Resources folder
+    public float diceResult;
+
+    public GameObject blueFish;
+    public Vector3 blueFishPosition;
+
+    public GameObject pinkFish;
+    public Vector3 pinkFishPosition;
+
+    public GameObject orangeFish;
+    public Vector3 orangeFishPosition;
+
+    public GameObject yellowFish;
+    public Vector3 yellowFishPosition;
+
+    public GameObject Boot;
+
+
     private Sprite[] diceSides;
 
-    // Reference to sprite renderer to change sprites
+    
     private SpriteRenderer rend;
 
-	// Use this for initialization
-	private void Start () {
+    
+    private void Start()
+    {
+        blueFishPosition = blueFish.transform.position;
+        pinkFishPosition = pinkFish.transform.position;
+        orangeFishPosition = orangeFish.transform.position;
+        yellowFishPosition = yellowFish.transform.position;
 
-        // Assign Renderer component
+
+
         rend = GetComponent<SpriteRenderer>();
 
-        // Load dice sides sprites to array from DiceSides subfolder of Resources folder
         diceSides = Resources.LoadAll<Sprite>("DiceSides/");
-	}
-	
-    // If you left click over the dice then RollTheDice coroutine is started
+
+
+    }
+
     private void OnMouseDown()
     {
         StartCoroutine("RollTheDice");
     }
 
-    // Coroutine that rolls the dice
     private IEnumerator RollTheDice()
     {
-        // Variable to contain random dice side number.
-        // It needs to be assigned. Let it be 0 initially
         int randomDiceSide = 0;
 
-        // Final side or value that dice reads in the end of coroutine
         int finalSide = 0;
 
-        // Loop to switch dice sides ramdomly
-        // before final side appears. 20 itterations here.
         for (int i = 0; i <= 20; i++)
         {
-            // Pick up random value from 0 to 5 (All inclusive)
-            randomDiceSide = Random.Range(0, 5);
+            randomDiceSide = Random.Range(0, 6);
 
-            // Set sprite to upper face of dice from array according to random value
             rend.sprite = diceSides[randomDiceSide];
 
-            // Pause before next itteration
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.1f);
         }
 
-        // Assigning final side so you can use this value later in your game
-        // for player movement for example
         finalSide = randomDiceSide + 1;
 
-        // Show final dice value in Console
         Debug.Log(finalSide);
+
+        diceResult = finalSide;
+
+        MoveFish();
+    }
+
+    private void Update()
+    {
+        
+    }
+
+
+    public void MoveFish()
+    {
+
+        switch (diceResult)
+        {
+            case 1:
+                blueFishPosition = new Vector3(blueFish.transform.position.x + 1, blueFish.transform.position.y, 0);
+                blueFish.transform.position = blueFishPosition;
+                break;
+            case 2:
+                
+                break;
+            case 3:
+                orangeFishPosition = new Vector3(orangeFish.transform.position.x + 1, orangeFish.transform.position.y, 0);
+                orangeFish.transform.position = orangeFishPosition;
+                break;
+            case 4:
+                pinkFishPosition = new Vector3(pinkFish.transform.position.x + 1, pinkFish.transform.position.y, 0);
+                pinkFish.transform.position = pinkFishPosition;
+                break;
+            case 5:
+                
+                break;
+            case 6:
+                yellowFishPosition = new Vector3(yellowFish.transform.position.x + 1, yellowFish.transform.position.y, 0);
+                yellowFish.transform.position = yellowFishPosition;
+                break;
+        }
+      
     }
 }
