@@ -18,7 +18,8 @@ public class Dice : MonoBehaviour
     public GameObject yellowFish;
     public Vector3 yellowFishPosition;
 
-    public GameObject Boot;
+    public GameObject boot;
+    public Vector3 bootPosition;
 
 
     private Sprite[] diceSides;
@@ -33,6 +34,7 @@ public class Dice : MonoBehaviour
         pinkFishPosition = pinkFish.transform.position;
         orangeFishPosition = orangeFish.transform.position;
         yellowFishPosition = yellowFish.transform.position;
+        bootPosition = boot.transform.position;
 
 
 
@@ -88,7 +90,8 @@ public class Dice : MonoBehaviour
                 blueFish.transform.position = blueFishPosition;
                 break;
             case 2:
-                
+                bootPosition = new Vector3(boot.transform.position.x + 1, boot.transform.position.y, 0);
+                boot.transform.position = bootPosition;
                 break;
             case 3:
                 orangeFishPosition = new Vector3(orangeFish.transform.position.x + 1, orangeFish.transform.position.y, 0);
@@ -99,7 +102,8 @@ public class Dice : MonoBehaviour
                 pinkFish.transform.position = pinkFishPosition;
                 break;
             case 5:
-                
+                bootPosition = new Vector3(boot.transform.position.x + 1, boot.transform.position.y, 0);
+                boot.transform.position = bootPosition;
                 break;
             case 6:
                 yellowFishPosition = new Vector3(yellowFish.transform.position.x + 1, yellowFish.transform.position.y, 0);
