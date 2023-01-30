@@ -147,17 +147,17 @@ public class Dice : MonoBehaviour
                 }
 
 
-                else if (blueFish.transform.position.x >= 6 && orangeFish.active == true)
+                else if (blueFish.transform.position.x >= 6 && orangeFish.active == true && orangeFish.transform.position.x < 6)
                 {
                     orangeFishPosition = new Vector3(orangeFish.transform.position.x + 1, orangeFish.transform.position.y, 0);
                     orangeFish.transform.position = orangeFishPosition;
                 }
-                else if (blueFish.transform.position.x >= 6 && pinkFish.active == true)
+                else if (blueFish.transform.position.x >= 6 && pinkFish.active == true && pinkFish.transform.position.x < 6)
                 {
                     pinkFishPosition = new Vector3(pinkFish.transform.position.x + 1, pinkFish.transform.position.y, 0);
                     pinkFish.transform.position = pinkFishPosition;
                 }
-                else if (blueFish.transform.position.x >= 6 && yellowFish.active == true)
+                else if (blueFish.transform.position.x >= 6 && yellowFish.active == true && yellowFish.transform.position.x < 6)
                 {
                     yellowFishPosition = new Vector3(yellowFish.transform.position.x + 1, yellowFish.transform.position.y, 0);
                     yellowFish.transform.position = yellowFishPosition;
@@ -184,17 +184,17 @@ public class Dice : MonoBehaviour
                 }
 
 
-                else if (orangeFish.transform.position.x >= 6 && blueFish.active == true)
+                else if (orangeFish.transform.position.x >= 6 && blueFish.active == true && blueFish.transform.position.x < 6)
                 {
                     blueFishPosition = new Vector3(blueFish.transform.position.x + 1, blueFish.transform.position.y, 0);
                     blueFish.transform.position = blueFishPosition;
                 }
-                else if (orangeFish.transform.position.x >= 6 && pinkFish.active == true)
+                else if (orangeFish.transform.position.x >= 6 && pinkFish.active == true && pinkFish.transform.position.x < 6)
                 {
                     pinkFishPosition = new Vector3(pinkFish.transform.position.x + 1, pinkFish.transform.position.y, 0);
                     pinkFish.transform.position = pinkFishPosition;
                 }
-                else if (orangeFish.transform.position.x >= 6 && yellowFish.active == true)
+                else if (orangeFish.transform.position.x >= 6 && yellowFish.active == true && yellowFish.transform.position.x < 6)
                 {
                     yellowFishPosition = new Vector3(yellowFish.transform.position.x + 1, yellowFish.transform.position.y, 0);
                     yellowFish.transform.position = yellowFishPosition;
@@ -215,17 +215,17 @@ public class Dice : MonoBehaviour
                 }
 
 
-                else if (pinkFish.transform.position.x >= 6 && blueFish.active == true)
+                else if (pinkFish.transform.position.x >= 6 && blueFish.active == true && blueFish.transform.position.x < 6)
                 {
                     blueFishPosition = new Vector3(blueFish.transform.position.x + 1, blueFish.transform.position.y, 0);
                     blueFish.transform.position = blueFishPosition;
                 }
-                else if (pinkFish.transform.position.x >= 6 && orangeFish.active == true)
+                else if (pinkFish.transform.position.x >= 6 && orangeFish.active == true && orangeFish.transform.position.x < 6)
                 {
                     orangeFishPosition = new Vector3(orangeFish.transform.position.x + 1, orangeFish.transform.position.y, 0);
                     orangeFish.transform.position = orangeFishPosition;
                 }
-                else if (pinkFish.transform.position.x >= 6 && yellowFish.active == true)
+                else if (pinkFish.transform.position.x >= 6 && yellowFish.active == true && yellowFish.transform.position.x < 6)
                 {
                     yellowFishPosition = new Vector3(yellowFish.transform.position.x + 1, yellowFish.transform.position.y, 0);
                     yellowFish.transform.position = yellowFishPosition;
@@ -252,17 +252,17 @@ public class Dice : MonoBehaviour
                 }
 
 
-                else if (yellowFish.transform.position.x >= 6 && blueFish.active == true)
+                else if (yellowFish.transform.position.x >= 6 && blueFish.active == true && blueFish.transform.position.x < 6)
                 {
                     blueFishPosition = new Vector3(blueFish.transform.position.x + 1, blueFish.transform.position.y, 0);
                     blueFish.transform.position = blueFishPosition;
                 }
-                else if (yellowFish.transform.position.x >= 6 && orangeFish.active == true)
+                else if (yellowFish.transform.position.x >= 6 && orangeFish.active == true && orangeFish.transform.position.x < 6)
                 {
                     orangeFishPosition = new Vector3(orangeFish.transform.position.x + 1, orangeFish.transform.position.y, 0);
                     orangeFish.transform.position = orangeFishPosition;
                 }
-                else if (yellowFish.transform.position.x >= 6 && pinkFish.active == true)
+                else if (yellowFish.transform.position.x >= 6 && pinkFish.active == true && pinkFish.transform.position.x < 6)
                 {
                     pinkFishPosition = new Vector3(pinkFish.transform.position.x + 1, pinkFish.transform.position.y, 0);
                     pinkFish.transform.position = pinkFishPosition;
