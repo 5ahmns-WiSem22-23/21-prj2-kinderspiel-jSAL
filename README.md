@@ -11,8 +11,8 @@ Spielverlauf:
 Zu  Beginn  dürft  ihr  entscheiden,  ob  ihr  lieber  zu  den  Fischern oder den Fischen halten möchtet. 
 Der   jüngste   Spieler   beginnt   und   würfelt.   Hast   du   Blau, Orange, Gelb oder Rosa gewürfelt, ziehst der gleichfarbige  Fisch  ein  Flussteil  weiter.  Würfelst  du  Rot oder Grün, zieht das Boot ein Flussteil weiter. Anschließend ist der nächste Spieler an der Reihe.
 
-Ein Fisch erreicht das Meer: 
-Ziehst du einen Fisch in den sicheren Bereich, ist er frei und kann nicht mehr vom Boot gefangen werden. Wird sei-ne Farbe im Spielverlauf noch einmal gewürfelt, darfst du  einen  beliebigen  anderen  Fisch  ein  Flussteil  vor-wärts bewegen. 
+Ein Fisch erreicht den sicheren Bereich: 
+Ziehst du einen Fisch in den sicheren Bereich, ist er frei und kann nicht mehr vom Boot gefangen werden. Wird seine Farbe im Spielverlauf noch einmal gewürfelt, darfst du  einen  beliebigen  anderen  Fisch  ein  Flussteil  vorwärts bewegen. 
 
 Ein Fisch wird gefangen:
 Wenn sich das Boot bzw die Köder der Angeln des Boots auf der Höhe eines Fisches befinden, gilt dieser als gefangen.
